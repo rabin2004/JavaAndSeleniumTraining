@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testng Features Testing">
+
+  <test thread-count="5" name="Testng All Features Testing">
+  
+    <classes>
+    
+      <class name="com.test.ExceptionTimeOutTest"/>
+      <class name="com.test.GoogleTest"/>
+      <class name="com.test.InvocationCountTest"/>
+      <class name="com.test.TestNgBasics"/>
+      <class name="com.test.TestNgFeatures"/>
+      <class name="com.test.ValidationTest"/>
+
+    </classes>
+    
+  </test> <!-- FirstSuiteTest -->
+  
+</suite> <!-- Suite -->
