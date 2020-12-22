@@ -16,7 +16,7 @@ public class SeleniumBasics {
 
 		
 		//2. Chrome Browser
-		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.google.com");  // enter url
 		
@@ -35,7 +35,8 @@ public class SeleniumBasics {
 		
 		//System.out.println(driver.getPageSource());
 		
-		driver.quit(); // to close browser
+		
+		//driver.quit(); // to close browser
 		}
 
 }

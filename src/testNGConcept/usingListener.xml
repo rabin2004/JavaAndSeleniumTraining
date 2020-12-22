@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="ListeningSuite">
+
+	<listeners>
+		<listener class-name="testNGConcept.TestListener"/>
+	</listeners>
+	
+  <test thread-count="5" parallel="classes" name="ListeningAllTest">
+    <classes>
+      <class name="testNGConcept.TestingListenerConcpet"/>
+    </classes>
+  </test> <!-- ListeningAllTest -->
+</suite> <!-- ListeningSuite -->

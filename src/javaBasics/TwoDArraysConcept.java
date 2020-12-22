@@ -40,8 +40,39 @@ public class TwoDArraysConcept {
 			}
 		}
 		
+		String y[][] = new String [3][5];
+		// 1st Row
+			y[0][0]="Tom";
+			y[0][1]="Clancy";
+			y[0][2]="M";
+			y[0][3]="2/2/1999";
+			y[0][4]="NY";
+		// 2nd Row	
+			y[1][0]="Dick";
+			y[1][1]="John";
+			y[1][2]="M";
+			y[1][3]="3/3/1990";
+			y[1][4]="LA";
+		// 3rd Row	
+			y[2][0]="Harry";
+			y[2][1]="Mei";
+			y[2][2]="M";
+			y[2][3]="4/4/2000";
+			y[2][4]="FL";
+			
+			
+//		System.out.println(y[1][1]);
+//		System.out.println(y[2][3]);
+//		System.out.println(y.length);
+//		System.out.println(y[0].length);
 		
+		for(int row=0; row<y.length; row++) {
+			for(int col=0; col<y[0].length; col++) {
+				System.out.println(y[row][col]);
+			}
+		}
+			
+	}
 
 	}
 
-}

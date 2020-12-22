@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [SmokeCycle]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="SmokeTest(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testNGConcept.BasicScript2">
+        <methods>
+          <include name="getSupportPageTitle"/>
+          <include name="getContactPageTitle"/>
+        </methods>
+      </class> <!-- testNGConcept.BasicScript2 -->
+      <class name="testNGConcept.BasicScript">
+        <methods>
+          <include name="getLangdingUrl"/>
+          <include name="getHomePageTitle"/>
+          <include name="getRegisterPageTitle"/>
+          <include name="getSignOnPageTitle"/>
+        </methods>
+      </class> <!-- testNGConcept.BasicScript -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [SmokeCycle] -->

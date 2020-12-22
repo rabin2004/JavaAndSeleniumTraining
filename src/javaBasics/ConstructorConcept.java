@@ -1,6 +1,6 @@
 package javaBasics;
 
-public class ConstructorConcept { // Constructor= unlike a function never returns, used to initialize values to class variables
+public class ConstructorConcept { // Constructor= unlike a function never returns value, used to initialize values to class variables
 // class instance variables
 	String name;
 	int age;
@@ -9,7 +9,7 @@ public class ConstructorConcept { // Constructor= unlike a function never return
 		System.out.println("Default constructor");	
 	}
 	
-	// Constructor with ) parameter can't be created again
+	// Duplicate Constructor with no parameter can't be created again
 	/*public ConstructorConcept() { // to create constructor, its a 0 parameter constructor
 		System.out.println("Default constructor");	
 	} */

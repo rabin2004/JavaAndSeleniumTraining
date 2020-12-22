@@ -22,21 +22,21 @@ public class MethodOverloading {
 	//duplicate methods = i.e with same method name with same number of arguments are not allowed
 	//method overloading = when method name is same with different arguments or input parameters within the same class
 	public void sum() { //0 input parameter
-		System.out.println("SUM metohod -- zero parameter");
+		System.out.println("SUM method -- zero parameter");
 	}
 	
 	public void sum(int i) { //1 input parameter
-		System.out.println("SUM metohod -- 1 input parameter");
+		System.out.println("SUM method -- 1 input parameter");
 		System.out.println(i);
 	}
 	
 	public void sum(double d) { //1 input parameter but different datatype is allowed
-		System.out.println("SUM metohod -- 1 input but different parameter");
+		System.out.println("SUM method -- 1 input but different parameter");
 		System.out.println(d);
 	}
 	
 	public void sum(int k, int l) { // 2 input parameter
-		System.out.println("SUM metohod -- 2 input parameter");
+		System.out.println("SUM method -- 2 input parameter");
 		System.out.println(k+l);
 	}
 	
