@@ -46,47 +46,26 @@ public class LoginApp {
 		System.out.print("Password: ");
 		String inputPassword = scan.next();
 		
-		Iterator<String> it = registrationArray.iterator();
-		
-		while(it.hasNext()) {
-			String DBusername = null;
-			String DBpassword = null;
-			
-			if(inputUserName.equals(userName)) {
-				DBusername = it.next();
-				System.out.println(DBusername);
-			}
-			if(inputPassword.equals(password)){
-				DBpassword = it.next();
-				System.out.println(DBpassword);
-			}
-		
-			System.out.println(DBusername);
-			System.out.println(DBpassword);
-		System.out.println("*********************************************");
-		if(inputUserName.equals(DBusername) && inputPassword.equals(DBpassword)) {
-			System.out.println("Login Success:");
-			System.out.println("Welcome back "+firstName+"!");
+		if(inputUserName.equals(userName) && inputPassword.equals(password)) {
+			System.out.println("Login allowed:");
+			System.out.println("Welcome back "+registrationArray.get(0)+"!");
 		}
-		else if(!inputUserName.equals(DBusername) || !inputPassword.equals(DBpassword)) {
-			System.out.println("Invalid username or password. Re-enter valid credentials.");
+		else if(!inputUserName.equals(userName) || !inputPassword.equals(password)) {
+			System.out.println("Invalid username or password. Enter correct credentials.");
 			System.out.print("User Name: ");
-			String ReEnterUserName = scan.next();
+			String reEnterUserName = scan.next();
 			System.out.print("Password: ");
-			String ReEnterPassword = scan.next();
-			
-			if(ReEnterUserName.equals(DBusername) && ReEnterPassword.equals(DBpassword)) {
-				System.out.println("Login Success:");
-				System.out.println("Welcome back "+firstName+"!");
+			String reEnterPassword = scan.next();
+			if(reEnterUserName.equals(userName) && reEnterPassword.equals(password)) {
+				System.out.println("Login allowed:");
+				System.out.println("Welcome back "+registrationArray.get(0)+"!");
 			}
 			else {
-				System.out.println("Access denied. Account locked. Contact customer service.");
-			}	
+				System.out.println("Account locked. Contact technical team.");
+			}
 		}
 		else {
-			System.out.println("Access denied. Account locked. Contact customer service.");
+			System.out.println("User not registered. Register first.");
 		}
-		System.out.println("*********************************************");
-	}
 	}
 }

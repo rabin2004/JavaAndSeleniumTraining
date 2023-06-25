@@ -28,6 +28,20 @@ public class seleniumGridExecution {
 	       driver.get("http://google.com");
 	       System.out.println(driver.getTitle());
 
+	       
+	       // 1. browserOptions/set Capability to browserOptions/RemoteWebDriver - send hub url & browswerOptions
+	       
+//	       ChromeOptions chromeOptions = new ChromeOptions();
+//	       chromeOptions.setCapability("browserVersion", "74");
+//	       chromeOptions.setCapability("platformName", "Windows 10");
+//	       WebDriver driver = new RemoteWebDriver(new URL("http://www.myexamplebrowserstack.com"), chromeOptions);
+//	       driver.get("http://www.google.com");
+//	       driver.quit();
+	       
+//	       FirefoxOptions firefoxOptions = new FirefoxOptions();
+//	       WebDriver driver = new RemoteWebDriver(new URL("http://www.myexamplebrowserstack.com"), firefoxOptions);
+//	       driver.get("http://www.google.com");
+//	       driver.quit();
 
 	}
 

@@ -29,7 +29,7 @@ public class DataDrivenFromExcel {
 		System.out.println(rowCount);
 		
 		// traversing through rows
-		for(int i=0; i<=rowCount; i++) {
+		for(int i=1; i<=rowCount; i++) {
 			Row row = workbookSheet.getRow(i);
 			
 			// traversing through each column in each row
@@ -37,6 +37,8 @@ public class DataDrivenFromExcel {
 				// extracting data through each cell
 				System.out.print(row.getCell(j).getStringCellValue()+"|| ");
 			}
+//			System.out.println("username: "+row.getCell(0));
+//			System.out.println("password: "+row.getCell(1));
 			System.out.println();
 		}
 	}

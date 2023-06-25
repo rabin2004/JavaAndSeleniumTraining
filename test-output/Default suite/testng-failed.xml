@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGConcept.ParametrizeDataProvider">
+      <class name="excelApachePOIconcept.TestNGDataDrivenExcel">
         <methods>
-          <include name="multipleUserRegistration" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="initialization"/>
+          <include name="multipleUserSignOn"/>
         </methods>
-      </class> <!-- testNGConcept.ParametrizeDataProvider -->
+      </class> <!-- excelApachePOIconcept.TestNGDataDrivenExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -182,6 +182,63 @@ public class Practice {
 		}
 		System.out.println(sb);	
 	}
+	
+	public static String customerIntialsWithSubString(String custName) { // firstName lastName
+		String firstNameInit = custName.substring(0,1);
+		int positionOfSpace = custName.indexOf(" ");
+		String lastNameInit = custName.substring(positionOfSpace+1, positionOfSpace+2);
+		String custInit = firstNameInit.concat(lastNameInit);
+		return custInit;
+	}
+	
+	public static String customerIntialsUsingSplit(String custName) {
+		String[] nameSplit = custName.split(" ");
+		String firstName = nameSplit[0];
+		String lastName = nameSplit[1];
+		String firstNameInit = firstName.substring(0,1);
+		String lastNameInit = lastName.substring(0,1);
+		String custInit = firstNameInit.concat(lastNameInit);
+		return custInit;
+	}
+	
+	public static void multiplicationTable(int num) {
+		for(int i=1; i<=10; i++){
+		    System.out.println(num+"*"+i+"="+(num*i));
+		}
+	}
+	
+	public static void pictorialRepresentationJava() {
+		System.out.println("   J    a   v     v  a ");
+        System.out.println("   J   a a   v   v  a a");
+        System.out.println("J  J  aaaaa   V V  aaaaa");
+        System.out.println(" JJ  a     a   V  a     a");
+	}
+	
+	public static void pictorialRepresentationUSflag() {
+		System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println(" * * * * *  ==================================");
+        System.out.println("* * * * * * ==================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+        System.out.println("==============================================");
+	}
+	
+	public static void printFace() {
+		System.out.println(" +\"\"\"\"\"+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+ ");
+	}
 
 	public static void main(String[] args) {
 		anagram("nepal", "nelap");
@@ -201,6 +258,10 @@ public class Practice {
 		sortArrayManipulateOutput(new Integer[] { 4, 6, 2, 3, 1, 5, 6, 7, 8, 9, 10 });
 		sortArrayEvenNumManipulateOutput(new Integer[] { 4, 6, 2, 3, 1, 5, 6, 7, 8, 9, 10 });
 		getNameIntials("Maria Jules Junior");
+		multiplicationTable(9);
+		pictorialRepresentationJava();
+		pictorialRepresentationUSflag();
+		printFace();
 	}
 
 }

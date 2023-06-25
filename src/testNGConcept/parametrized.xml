@@ -5,14 +5,10 @@
 
   <test thread-count="5" parallel="tests" name="DataFromXMLTest">
   	<parameter name="browser" value="chrome"/>
+  	<parameter name="username" value="abc"/>
+	<parameter name="password" value="123"/>
     <classes>
       <class name="testNGConcept.XmlParametrization"/>
-      <methods>
-      	<method name="signIn"/>
-      		<!-- passing paramteres through xml file, in key & value pair -->
-			<parameter name="username" value="abc"/>
-			<parameter name="password" value="123"/>
-      </methods>
     </classes>
   </test> <!-- DataFromXMLTest -->
 </suite> <!-- ParametrizedSuite -->

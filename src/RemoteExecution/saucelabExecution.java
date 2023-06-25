@@ -25,6 +25,22 @@ public class saucelabExecution {
 		System.out.println(driver.getTitle());
 
 		driver.quit();
+		
+		
+//		MutableCapabilities sauceOptions = new MutableCapabilities();
+//
+//		EdgeOptions browserOptions = new EdgeOptions();
+//		browserOptions.setCapability("platformName", "macOS 10.13");
+//		browserOptions.setCapability("browserVersion", "latest");
+//		browserOptions.setCapability("sauce:options", sauceOptions);
+		
+//		MutableCapabilities sauceOptions = new MutableCapabilities();
+//		sauceOptions.setCapability("screenResolution", "1024x768");
+//
+//		InternetExplorerOptions browserOptions = new InternetExplorerOptions();
+//		browserOptions.setCapability("platformName", "Windows 7");
+//		browserOptions.setCapability("browserVersion", "9.0");
+//		browserOptions.setCapability("sauce:options", sauceOptions);
 	}
 
 }
